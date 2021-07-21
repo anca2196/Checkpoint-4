@@ -1,5 +1,6 @@
 import MenuButton from "./MenuButton"
 import styled from "styled-components";
+import { NavLink } from 'react-router-dom'
 
 const NavBarContainer = styled.div`
     margin: 0;
@@ -10,12 +11,19 @@ const NavBarContainer = styled.div`
     align-items: center;
 `
 
+const LogInLink = styled(NavLink)`
+    padding-top: .5rem;
+    color: white;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    
+`
 
 const Navbar = () => {
     return (
         <NavBarContainer>
             <MenuButton />
-            <p> Log In</p>
+            <LogInLink to="/login" ><p> Log In</p></LogInLink>
         </NavBarContainer>
     )
 }

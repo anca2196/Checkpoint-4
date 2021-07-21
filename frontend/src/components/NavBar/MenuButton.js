@@ -12,8 +12,10 @@ import ContactMailIcon from '@material-ui/icons/ContactMail';
 import styled from 'styled-components';
 
 const StyledLink = styled(NavLink)`
+  
     color: black;
     text-decoration: none;
+    font-size: 2rem;
   
 `;
 
