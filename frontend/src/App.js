@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import HomeGuest from './components/Home/HomeGuest';
+import About from './components/About/About';
+import { Switch, Route } from "react-router-dom";
+import Navbar from './components/NavBar/NavBar';
+import { useState } from 'react';
+import HomeLoggedIn from './components/Home/HomeLoggedIn';
+import LogIn from './components/Log In /LogIn';
 
 function App() {
+  const [userloggedIn, setUserLoggedIn] = useState(true)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Switch>
+        <Route exact path ="/"> 
+          {userloggedIn ? <HomeLoggedIn /> : <HomeGuest />}
+        </Route>
+        <Route exact path ="/login" component={LogIn} />
+        <Route exact path ="/about" component={About} />
+      </Switch>
     </div>
   );
 }
