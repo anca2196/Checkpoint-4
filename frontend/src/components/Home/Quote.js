@@ -13,10 +13,16 @@ const QuoteCard = styled.div`
     padding: 0 1rem;
     display: flex;
     justify-content: center;
+    position:relative;
+    top:-10rem;
     align-items: center;
     font-size: 2rem;
     font-style: italic;
     text-align: center;
+
+    @media screen and (max-width: 450px){
+        top:-15rem;
+    }
 `
 const QuoteContainer = styled.div` 
     width: 100%;

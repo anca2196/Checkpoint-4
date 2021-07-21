@@ -8,7 +8,7 @@ import HomeLoggedIn from './components/Home/HomeLoggedIn';
 import LogIn from './components/Log In /LogIn';
 
 function App() {
-  const [userloggedIn, setUserLoggedIn] = useState(true)
+  const [userloggedIn, setUserLoggedIn] = useState(false)
   return (
     <div className="App">
       <Navbar />

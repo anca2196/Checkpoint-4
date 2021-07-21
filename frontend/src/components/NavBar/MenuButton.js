@@ -8,6 +8,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import MenuIcon from '@material-ui/icons/Menu';
 import HomeIcon from '@material-ui/icons/Home';
+import MenuBookIcon from '@material-ui/icons/MenuBook';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
 import styled from 'styled-components';
 
@@ -96,6 +97,15 @@ const StyledMenu = withStyles({
                     <ContactMailIcon fontSize="small" />
                     </ListItemIcon>
                     <ListItemText primary="Who is Kanye?" /> 
+                </StyledMenuItem>
+            </StyledLink>
+
+            <StyledLink to="/fan-diary" >
+                <StyledMenuItem>
+                    <ListItemIcon>
+                    <MenuBookIcon fontSize="small" />
+                    </ListItemIcon>
+                    <ListItemText primary="Your Kanye Fan Diary" /> 
                 </StyledMenuItem>
             </StyledLink>
         </StyledMenu>

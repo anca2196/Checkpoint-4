@@ -14,7 +14,9 @@ const AboutContainer = styled.div`
         padding-left: 5rem;
         font-weight: 700;
         font-size: 4rem;
+        color:#D93B3B;
     }
+
 `
 
 const About = () => {
