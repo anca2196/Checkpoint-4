@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useState, useEffect } from "react";
+import { Rate } from 'antd';
 
 const QuoteCard = styled.div` 
     width: 65%;
@@ -56,9 +57,18 @@ useEffect( getKanyeQuote, [])
     return (
         <QuoteContainer>
             <QuoteCard>
-            { kanyeQuote ? <q> {kanyeQuote}</q> : "Loading awesome quote..."}
+                { kanyeQuote ? <q> {kanyeQuote}</q> : "Loading awesome quote..."}
             </QuoteCard>
-            <QuoteFeedBackCard> <h1>hello</h1>
+            <QuoteFeedBackCard>
+                <div>
+                    <p>Please find the words to describe how much Kanye inspired you today: </p>
+                    <input></input>
+                </div>
+                <div>
+                    <p>Rate how much you love this quote:</p>
+                    < Rate/>
+                </div>
+                <button> Submit your kanye love</button>
             </QuoteFeedBackCard>
         </QuoteContainer>
     )
