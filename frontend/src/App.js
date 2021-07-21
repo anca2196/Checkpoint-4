@@ -3,13 +3,18 @@ import HomeGuest from './components/Home/HomeGuest';
 import About from './components/About/About';
 import { Switch, Route } from "react-router-dom";
 import Navbar from './components/NavBar/NavBar';
+import { useState } from 'react';
+import HomeLoggedIn from './components/Home/HomeLoggedIn';
 
 function App() {
+  const [userloggedIn, setUserLoggedIn] = useState(true)
   return (
     <div className="App">
       <Navbar />
       <Switch>
-        <Route exact path ="/" component={HomeGuest} />
+        <Route exact path ="/"> 
+          {userloggedIn ? <HomeLoggedIn /> : <HomeGuest />}
+        </Route>
         <Route exact path ="/about" component={About} />
       </Switch>
     </div>

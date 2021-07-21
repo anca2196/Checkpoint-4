@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import bgKanye1 from "../../assets/kanye.jpg"
-import Quote from "./Quote"
+import {Quote} from "./Quote"
 import Title from "../Title/Title"
 
 const HomeContainer = styled.div`
@@ -21,8 +21,8 @@ const HomeGuest = () => {
     return (
         <HomeContainer>
             < Title text={ "The Wisdom of Kanye West"}/>
-            <QuoteContainer>
-                <Quote />
+            <QuoteContainer >
+                <Quote status={"alone"}/>
             </QuoteContainer>
         </HomeContainer>
     )
