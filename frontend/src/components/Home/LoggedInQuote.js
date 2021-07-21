@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { useState, useEffect } from "react";
 import { Rate } from 'antd';
+import "antd/dist/antd.css"
 
 const QuoteCard = styled.div` 
     width: 65%;
@@ -40,8 +41,10 @@ const QuoteFeedBackCard = styled.div`
 
 `
 
+
 export const LoggedInQuote = () => {
 const [kanyeQuote, setKanyeQuote] = useState(null)
+const [ quoteRating, setQuoteRating] = useState(0)
 
 const getKanyeQuote = () => {
     fetch("https://api.kanye.rest/")
@@ -53,6 +56,10 @@ const getKanyeQuote = () => {
 }
 
 useEffect( getKanyeQuote, [])
+
+const handleRantingClick = (e) => {
+  setQuoteRating(e)
+}
 
     return (
         <QuoteContainer>
@@ -66,7 +73,7 @@ useEffect( getKanyeQuote, [])
                 </div>
                 <div>
                     <p>Rate how much you love this quote:</p>
-                    < Rate/>
+                    < Rate style={{display: "flex"}} count={"5"} onChange={(e) => handleRantingClick(e)} />
                 </div>
                 <button> Submit your kanye love</button>
             </QuoteFeedBackCard>
