@@ -59,27 +59,23 @@ A showcase of Kane West's most amazing thoughts.
   cd checkpoint-4
 ```
 
-3. Install dependencies
-
-```bash
-  npm install
-```
-
-4. To start the frontend folder server:
+3. To start the frontend folder server:
 
 ```bash
   cd frontend
+  npm install
   npm start
 ```
 
-5. To start the backend folder server:
+4. To start the backend folder server:
 
 ```bash
   cd backend
+  npm install
   npm run dev
 ```
 
-6. Happy coding!
+5. Happy coding!
 
 ## Color Reference
 
