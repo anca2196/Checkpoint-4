@@ -48,6 +48,7 @@ A showcase of Kane West's most amazing thoughts.
 
 ## Getting Started
 
+1. Clone the project
 
 ```bash
   git clone git@github.com:anca2196/Checkpoint-4.git
