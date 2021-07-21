@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { useState, useEffect } from "react";
 import { Rate } from 'antd';
 import "antd/dist/antd.css"
+import ActionButton from "../Buttons/ActionButton";
 
 const QuoteCard = styled.div` 
     width: 65%;
@@ -20,10 +21,18 @@ const QuoteCard = styled.div`
     font-size: 2rem;
     font-style: italic;
     text-align: center;
+
+    @media screen and (max-width: 500px){
+        width: 85%;
+        margin:1rem;
+        position:relative;
+        top:-5rem;
+        font-size: 1rem;
+    }
 `
 const QuoteContainer = styled.div` 
     width: 100%;
-    height:90vh;
+    min-height:50rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +46,28 @@ const QuoteFeedBackCard = styled.div`
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     color: white;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p{
+        margin-top: .5rem;
+    }
+
+    @media screen and (max-width: 500px){
+        width: 85%;
+        position:relative;
+        top:-5rem;
+        font-size: 1rem;
+    }
 
 `
 
@@ -67,15 +97,15 @@ const handleRantingClick = (e) => {
                 { kanyeQuote ? <q> {kanyeQuote}</q> : "Loading awesome quote..."}
             </QuoteCard>
             <QuoteFeedBackCard>
-                <div>
                     <p>Please find the words to describe how much Kanye inspired you today: </p>
                     <input></input>
-                </div>
-                <div>
-                    <p>Rate how much you love this quote:</p>
-                    < Rate style={{display: "flex"}} count={"5"} onChange={(e) => handleRantingClick(e)} />
-                </div>
-                <button> Submit your kanye love</button>
+                    <p>Rate how much you love this quote:  {" "} </p>
+                    < Rate style={{display: "inline"}} count={"5"} onChange={(e) => handleRantingClick(e)} />
+                   
+                    <div>
+                        <ActionButton text={"Submit your Kanye love"} />
+                    </div>
+                
             </QuoteFeedBackCard>
         </QuoteContainer>
     )
