@@ -16,7 +16,8 @@ const LogInLink = styled(NavLink)`
     color: white;
     text-decoration: underline;
     font-size: 1.5rem;
-    
+    cursor: pointer;
+    font-style: italic;
 `
 
 const Navbar = () => {

@@ -3,6 +3,7 @@ import bgKanye1 from "../../assets/kanye.jpg"
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import ActionButton from "../Buttons/ActionButton";
+import Title from "../Title/Title";
 
 const LogInContainer = styled.div`
     width: 100%;
@@ -14,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
       '& .MuiTextField-root': {
         margin: theme.spacing(5),
-        width: '30%',
+        width: '40%',
       },
     },
   }));
@@ -40,7 +41,7 @@ const LogIn = () => {
                 autoComplete="current-password"
                 variant="outlined"
             />
-            <ActionButton text={"Log In"} bigMargin={"bigMargin"}/>
+            <ActionButton text={"Log In"} bigMargin/>
         </LogInContainer>
         </form>
     )
