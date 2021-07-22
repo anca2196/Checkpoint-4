@@ -28,7 +28,7 @@
 <img alt="Styled-components" src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" />
 </p>
 
-A showcase of Kane West's most amazing thoughts.
+A showcase of Kane West's most amazing thoughts, plus the option to log how these thoughts influence you.
 
 ### Log In Credentials:
 
