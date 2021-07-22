@@ -30,6 +30,10 @@ A showcase of Kane West's most amazing thoughts.
 <img width="800" alt="React_App" src="https://user-images.githubusercontent.com/62710917/126561294-aff7be86-9f45-4b84-8e92-f1583318c7d7.png">
 </p>
 
+### Log In:
+
+* Username: kanye
+* Password: kanye
 
 ### Media responsive:
 
