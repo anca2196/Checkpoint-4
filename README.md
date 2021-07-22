@@ -1,5 +1,3 @@
-# Checkpoint-4
-
 # The Wisdom of Kanye West
 
 <details open="open">
