@@ -49,6 +49,49 @@ A showcase of Kane West's most amazing thoughts.
 <img width="460" alt="__Checkpoint_4___DbDesigner_net" src="https://user-images.githubusercontent.com/62710917/126556689-5391807c-718b-4fe0-98a3-0c8e090fbf87.png">
 </p>
 
+* API :
+ URL: `http://localhost:5000/diary/`
+ 
+ ```http
+  GET /diary/
+```
+ ```http
+  POST /diary/
+```
+ ```http
+  PUT /diary/:id
+```
+ ```http
+  DELETE /diary/:id
+```
+Example response:
+
+```JSON
+
+[
+    {
+        "testimony_id": 1,
+        "kanye_quote": "For me to say I wasn’t a genius, I would just be lying to you and to myself.",
+        "fan_testimony": "This quote is exactly how I feel. Kanye gets me",
+        "rating": 5
+    },
+    {
+        "testimony_id": 2,
+        "kanye_quote": "50 is Eminem’s favourite rapper. I’m my favourite rapper.",
+        "fan_testimony": "Can you even hold it against him? I'd be my favourite rapper too if I were Kanye.",
+        "rating": 4
+    },
+    {
+        "testimony_id": 3,
+        "kanye_quote": "One of my biggest Achilles heels has been my ego. And if I, Kanye West, can remove my ego, I think there’s hope for everyone.",
+        "fan_testimony": "This man is so inspirational... I feel awakened",
+        "rating": 5
+    }
+    ]
+
+```
+
+
 ## Getting Started
 
 1. Clone the project
@@ -107,3 +150,4 @@ Also Used:
 ## API
 
 This website uses the wonderful API [kanye.rest](https://github.com/ajzbc/kanye.rest)
+
