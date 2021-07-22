@@ -5,7 +5,6 @@ const express = require("express");
 const getAllEntries =  (req, res, next) => {
     Diary.getEntries(req, (err, result) => {
         if (err) {
-            console.log(err);
             res.status(500).send("Error getting entries");
           } else {
             res.status(200).json(result);
