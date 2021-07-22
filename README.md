@@ -19,27 +19,41 @@
 
 ## About The Project
 
+<p align="left">
+<img alt="React" src="https://img.shields.io/badge/React-white?style=for-the-badge&logo=react&logoColor=61DAFB" />
+<img alt="CSS" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+<img alt="Nodejs" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" /> 
+<img alt="Express" src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" />
+<img alt="MySQL" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" />
+<img alt="Styled-components" src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" />
+</p>
+
 A showcase of Kane West's most amazing thoughts.
+
+### Log In Credentials:
+
+* Username: kanye
+* Password: kanye
 
 ### Frontend
 * This folder contains the react-app. 
 
 <p align="center">
-<img width="800" alt="React_App_and_checkpoint-4_—_anca_MacBook-Pro_—____checkpoint-4_—_-zsh_—_80×24" src="https://user-images.githubusercontent.com/62710917/126557109-64ef492c-37d5-43e9-8123-ff495f8a9e31.png">
-<img width="800" alt="React_App" src="https://user-images.githubusercontent.com/62710917/126561294-aff7be86-9f45-4b84-8e92-f1583318c7d7.png">
-<img width="800" alt="React_App" src="https://user-images.githubusercontent.com/62710917/126577700-b7d50e99-ebd9-4767-b40c-cf469378677f.png">
+  <img width="700" alt="React_App" src="https://user-images.githubusercontent.com/62710917/126641573-0b016590-c85c-4eca-b10f-0e3f7ab95e7e.png">
+  <img width="700" alt="React_App" src="https://user-images.githubusercontent.com/62710917/126641421-e3b5b732-6a8e-48b8-8ea0-b3d0fe1df338.png">
+  <img width="700" alt="React_App" src="https://user-images.githubusercontent.com/62710917/126641890-ad335469-f442-4401-b0bf-c48a54793a42.png">
+  <img width="700" alt="React_App" src="https://user-images.githubusercontent.com/62710917/126642119-45524b1a-2114-4657-bcea-9fe8ca671f4b.png">
+
+
+
 </p>
 
-### Log In:
-
-* Username: kanye
-* Password: kanye
 
 ### Media responsive:
-
-<img width="333" alt="React_App" src="https://user-images.githubusercontent.com/62710917/126558041-108f969d-cd25-40bd-81c6-81eaedde3b8c.png">
-<img width="337" alt="React_App" src="https://user-images.githubusercontent.com/62710917/126557962-1f4ddb13-2719-4443-a647-c0cc131f4706.png">
-
+<p align="center">
+<img width="375" alt="React_App" src="https://user-images.githubusercontent.com/62710917/126642773-e01cdd9e-b9f7-4598-9a55-43addb42d6a4.png">
+<img width="369" alt="React_App" src="https://user-images.githubusercontent.com/62710917/126642714-c613a883-ff8d-4d1e-8b87-ca54c381fd1a.png">
+</p>
 
 ### Backend
 
@@ -138,8 +152,8 @@ Example response:
 ## Tech Stack
 
 * React.js
-* styled-components
-* node.js
+* Styled-Components
+* Node.js
 * mySQL
 * Express
 
