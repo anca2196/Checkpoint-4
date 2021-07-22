@@ -1,3 +1,4 @@
+<img width="559" alt="React_App" src="https://user-images.githubusercontent.com/62710917/126577670-744a8ad3-312c-4010-a2a8-6abe71a0e6df.png">
 # Checkpoint-4
 
 # The Wisdom of Kanye West
@@ -25,6 +26,7 @@ A showcase of Kane West's most amazing thoughts.
 * This folder contains the react-app. 
 
 <p align="center">
+<img width="800" alt="React_App" src="https://user-images.githubusercontent.com/62710917/126577700-b7d50e99-ebd9-4767-b40c-cf469378677f.png">
 <img width="800" alt="React_App_and_checkpoint-4_—_anca_MacBook-Pro_—____checkpoint-4_—_-zsh_—_80×24" src="https://user-images.githubusercontent.com/62710917/126557109-64ef492c-37d5-43e9-8123-ff495f8a9e31.png">
 <img width="800" alt="React_App" src="https://user-images.githubusercontent.com/62710917/126561294-aff7be86-9f45-4b84-8e92-f1583318c7d7.png">
 </p>
