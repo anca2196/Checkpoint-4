@@ -1,6 +1,5 @@
 const Diary = require("../model/diary-model");
 const connection = require("../config");
-const express = require("express");
 
 const getAllEntries =  (req, res, next) => {
     Diary.getEntries(req, (err, result) => {
@@ -29,11 +28,10 @@ const addTestimony = (req, res, next ) => {
 
 const editEntry = (req, res, next) => {
     const id = req.params.id;
-    const { fan_testimony, rating} = req.body;
-    connection.promise().query("UPDATE diary SET fan_testimony = ? , rating = ? WHERE testimony_id = ?", [ fan_testimony, rating, id])
+    const fan_testimony = req.body.fan_testimony;
+    connection.promise().query("UPDATE diary SET fan_testimony = ? WHERE testimony_id = ?", [ fan_testimony, id])
     .then(([result]) => {
-        const updatedEntry = { id , fan_testimony ,rating}
-        res.status(200).json(updatedEntry)
+        res.status(200).send("Successfully updated entry!")
         next()
       })
       .catch((err) => {
@@ -51,9 +49,6 @@ const deleteEntry = (req, res) => {
             res.status(500).send("Error deleting entry!")
         })
 }
-
-
-
 
 module.exports = {
     getAllEntries, 
