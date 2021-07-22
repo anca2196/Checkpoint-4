@@ -90,6 +90,8 @@ A showcase of Kane West's most amazing thoughts.
 | Falu Red| ![#941212](https://via.placeholder.com/10/941212?text=+) #941212 |
 | White | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF |
 
+* Wireframes: [Figma](https://www.figma.com/file/UyuXSGPD3S1iKuTWYuOF3n/Untitled?node-id=1%3A10)
+
 ## Tech Stack
 
 * React.js
