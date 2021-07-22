@@ -1,12 +1,14 @@
 const express = require("express");
 const router = express.Router();
-const { getAllEntries, addTestimony, editEntry } = require("../controller/diary-controller");
+const { getAllEntries, addTestimony, editEntry, deleteEntry } = require("../controller/diary-controller");
 
 router.get("/", getAllEntries);
 
 router.post("/", addTestimony);
 
 router.put("/:id", editEntry);
+
+router.delete("/:id", deleteEntry)
 
 // router.post("/diary/", (req, res) => {
 //     console.log(req.body);
