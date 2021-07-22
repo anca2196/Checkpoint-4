@@ -59,6 +59,15 @@ A showcase of Kane West's most amazing thoughts, plus the option to log how thes
 
 * This folder contains the node.js app.
 
+* Don't forget to create the .env file at the backend folder root with the following details, as per your mySQL credentials:
+ ```javascript
+      DB_HOST= 
+      DB_PORT=
+      DB_USER=
+      DB_PASSWORD=
+      DB_NAME=
+```
+
 <p align="center">
 <img width="460" alt="__Checkpoint_4___DbDesigner_net" src="https://user-images.githubusercontent.com/62710917/126556689-5391807c-718b-4fe0-98a3-0c8e090fbf87.png">
 </p>
