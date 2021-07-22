@@ -1,19 +1,17 @@
-import './App.css';
-import HomeGuest from './components/Home/HomeGuest';
-import About from './components/About/About';
+import HomeGuest from './components/Home Page/HomeGuest';
+import About from './components/About Page/About';
 import { Switch, Route } from "react-router-dom";
 import Navbar from './components/NavBar/NavBar';
 import { useState, useEffect } from 'react';
-import HomeLoggedIn from './components/Home/HomeLoggedIn';
-import LogIn from './components/Log In /LogIn';
-import DiaryGuest from './components/Fan-Diary/DiaryGuest';
-import DiaryLoggedIn from './components/Fan-Diary/DiaryLoggedIn';
+import HomeLoggedIn from './components/Home Page/HomeLoggedIn';
+import LogIn from './components/Log In Page/LogIn';
+import DiaryGuest from './components/Fan-Diary Page/DiaryGuest';
+import DiaryLoggedIn from './components/Fan-Diary Page/DiaryLoggedIn';
 
 function App() {
   const [userLoggedIn, setUserLoggedIn] = useState(false)
   
   useEffect(()=> {
-    console.log(userLoggedIn)
   },[userLoggedIn])
 
   return (

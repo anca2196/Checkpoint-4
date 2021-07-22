@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const TitleContainer = styled.div`
     margin: 2rem auto;
@@ -7,7 +7,7 @@ const TitleContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center
+    text-align: center;
 `
 
 const Title = ({text}) => {

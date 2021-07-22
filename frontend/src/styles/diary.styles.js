@@ -11,7 +11,6 @@ export const DiaryStyledContainer = styled.div`
     margin-top: -2rem;
     scroll-behavior: auto;
     background: url(${whitePhone}) center/ cover no-repeat;
-   
 `
 
 export const EntriesContainer = styled.div` 
