@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Rate } from 'antd';
 import "antd/dist/antd.css"
 import ActionButton from "../Buttons/ActionButton";
+import { useHistory } from "react-router";
 
 const QuoteCard = styled.div` 
     width: 65%;
@@ -80,6 +81,7 @@ export const LoggedInQuote = () => {
 const [kanyeQuote, setKanyeQuote] = useState(null)
 const [ userFeedback, setUserFeedback] = useState("")
 const [ quoteRating, setQuoteRating] = useState(0)
+const history = useHistory();
 
 const getKanyeQuote = () => {
     fetch("https://api.kanye.rest/")
@@ -100,7 +102,22 @@ const handleChangeFeedback = (e) => {
     setUserFeedback( [  e.target.value]);
 }
 
-console.log(userFeedback)
+const routeChange = () =>{ 
+    history.push("/fan-diary");
+}
+
+const handleSubmitClick = (e) => {
+    fetch("http://localhost:5000/diary/", {
+                method: "POST",
+                headers: {
+                    "Content-type": "application/json",
+                },
+                body: JSON.stringify({ "kanye_quote": kanyeQuote, "fan_testimony": userFeedback, "rating" : quoteRating }),
+            })
+            .then((res) => {routeChange(
+
+            )})
+}
 
     return (
         <QuoteContainer>
@@ -120,7 +137,7 @@ console.log(userFeedback)
                     < Rate style={{display: "inline"}} count={"5"} onChange={(e) => handleRantingClick(e)} />
                    
                     <div>
-                        <ActionButton text={"Submit your Kanye love"} />
+                        <ActionButton text={"Submit your Kanye love"} onClick={(e) => handleSubmitClick(e)}/>
                     </div>
             </QuoteFeedBackCard>
         </QuoteContainer>

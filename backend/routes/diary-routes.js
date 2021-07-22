@@ -1,16 +1,13 @@
 const express = require("express");
 const router = express.Router();
+const { getAllEntries, addTestimony, editEntry, deleteEntry } = require("../controller/diary-controller");
 
-router.get("/diary/", (req, res) => {
-    connection.promise().query("SELECT * FROM diary")
-        .then(([result]) => res.status(200).json(result))
-        .catch((err)=> res.status(500).send("Error retreiving testimonies", err))
-})
+router.get("/", getAllEntries);
 
-router.post("/diary/", (req, res) => {
-    connection.promise().query("SELECT * FROM diary")
-        .then(([result]) => res.status(200).json(result))
-        .catch((err)=> res.status(500).send("Error adding testimony", err))
-})
+router.post("/", addTestimony);
+
+router.put("/:id", editEntry);
+
+router.delete("/:id", deleteEntry)
 
 module.exports = router;

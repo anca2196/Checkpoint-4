@@ -23,7 +23,7 @@ const StyledLink = styled(NavLink)`
 const StyledMenu = withStyles({
     paper: {
       border: '1px solid #941212',
-      background: "#941212"
+      background: "rgba( 213, 33, 33, 0.85)"
     },
   })((props) => (
     <Menu
@@ -81,7 +81,7 @@ const StyledMenu = withStyles({
           open={Boolean(anchorEl)}
           onClose={handleClose}
         >
-            <StyledLink to="/" >
+            <StyledLink to="/home" >
                 <StyledMenuItem>
                         <ListItemIcon>
                         <HomeIcon fontSize="small" />
