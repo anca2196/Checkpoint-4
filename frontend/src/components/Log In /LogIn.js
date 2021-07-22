@@ -1,7 +1,6 @@
 import styled from "styled-components"
-import bgKanye1 from "../../assets/kanye.jpg"
+import whitePhone from "../../assets/white-phone.jpg"
 import { Form, Input, Button, Checkbox } from 'antd';
-import { makeStyles } from '@material-ui/core/styles';
 import {useHistory} from 'react-router-dom';
 
 
@@ -9,11 +8,15 @@ import {useHistory} from 'react-router-dom';
 const LogInContainer = styled.div`
     width: 100%;
     height: 100vh;
-    background: url(${bgKanye1}) center/ cover no-repeat;
+    background: url(${whitePhone}) center/ cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5%;
+
+    @media screen and (max-width: 450px){
+        width: 100%;
+    }
 `
 
 const style = {
@@ -21,7 +24,10 @@ const style = {
     background: "rgba( 100, 7, 7, 1 )",
     color: "white",
     border: "none",
-    width:"12rem"
+    width:"10rem",
+    margin: "0",
+    padding: "0"
+    
 }
 
 
@@ -84,10 +90,25 @@ const LogIn = ({ setUserLoggedIn}) => {
             <Input.Password />
           </Form.Item>
 
+
+      <Form.Item
+        name="remember"
+        valuePropName="checked"
+
+        wrapperCol={{
+          offset: 0,
+          span: 16,
+        }}
+      >
+        <Checkbox
+        >Remember me</Checkbox>
+      </Form.Item>
+
+
           <Form.Item
             wrapperCol={{
-              offset: 8,
-              span: 16,
+              offset: 3,
+              span: 15,
             }}
           >
             <Button style={style}  htmlType="submit">

@@ -28,7 +28,7 @@ const QuoteContainer = styled.div`
     width: 100%;
     height:90vh;
     display: flex;
-    flex-direction: {loggedIn ? };
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 `
@@ -46,6 +46,8 @@ const getKanyeQuote = () => {
 }
 
 useEffect( getKanyeQuote, [])
+
+
 
     return (
         <QuoteContainer>

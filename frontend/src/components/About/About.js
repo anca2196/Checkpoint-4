@@ -6,6 +6,7 @@ const AboutContainer = styled.div`
     background: url(${kanye2}) center/ cover no-repeat;
     width: 100%;
     height: 100vh;
+    margin-top: -.2rem;
     text-align: left;
 
     h1{

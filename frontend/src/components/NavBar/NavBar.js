@@ -1,10 +1,11 @@
 import MenuButton from "./MenuButton"
 import styled from "styled-components";
 import { NavLink } from 'react-router-dom'
+import bg from "../../assets/phone-background.jpg"
 
 const NavBarContainer = styled.div`
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.762);
+    background: url(${bg}) center/ cover no-repeat;
     padding: .5rem 1.5rem;
     display: flex;
     justify-content: space-between;
