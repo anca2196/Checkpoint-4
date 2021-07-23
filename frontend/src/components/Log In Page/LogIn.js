@@ -35,7 +35,7 @@ const LogIn = ({ setUserLoggedIn}) => {
     const history = useHistory();
 
         const routeChange = () =>{ 
-            history.push("/home");
+            history.push("/");
         }
 
     const onFinish = (values) => {

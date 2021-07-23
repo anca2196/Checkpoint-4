@@ -81,7 +81,7 @@ const StyledMenu = withStyles({
           open={Boolean(anchorEl)}
           onClose={handleClose}
         >
-            <StyledLink to="/home" >
+            <StyledLink to="/" >
                 <StyledMenuItem>
                         <ListItemIcon>
                         <HomeIcon fontSize="small" />
