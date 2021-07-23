@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Switch>
-        <Route exact path ="/home"> 
+        <Route exact path ="/"> 
           {userLoggedIn ? <HomeLoggedIn /> : <HomeGuest />}
         </Route>
         <Route exact path ="/login" > <LogIn userLoggedIn={userLoggedIn} setUserLoggedIn={setUserLoggedIn}/></Route>
