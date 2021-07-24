@@ -124,7 +124,7 @@ Example response:
 2. Go to the project directory
 
 ```bash
-  cd checkpoint-4
+  cd The-Wisdom-of-Kanye-West
 ```
 
 3. To start the frontend folder server:
