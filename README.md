@@ -118,7 +118,7 @@ Example response:
 1. Clone the project
 
 ```bash
-  git clone git@github.com:anca2196/Checkpoint-4.git
+  git clone git@github.com:anca2196/The-Wisdom-of-Kanye-West.git
 ```
 
 2. Go to the project directory
